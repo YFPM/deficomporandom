@@ -1,0 +1,65 @@
+/* Styles du body et de la page */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    background-image: url('images/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    width: 80%;
+}
+
+h1 {
+    color: gold;
+}
+
+#generateButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#generateButton:hover {
+    background-color: #0056b3;
+}
+
+#armyComposition {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 50px;
+    transition: opacity 0.5s ease;
+}
+
+.troop {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.troop.show {
+    opacity: 1;
+}
+
+#leaderboard {
+    margin-top: 20px;
+    font-size: 16px;
+    color: yellow;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Composition d'Armée - Clash of Clans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="welcomeContainer" class="container">
+    <h1>Bienvenue sur le générateur d'armée aléatoire !</h1>
+    <input type="text" id="playerName" placeholder="Votre pseudo" />
+    <input type="number" id="hdvLevel" placeholder="Niveau d'HDV" min="1" />
+    <button id="startButton">Démarrer</button>
+</div>
+
+<div id="troopSelectionContainer" class="container" style="display: none;">
+    <h2>Sélectionnez vos troupes</h2>
+    <input type="checkbox" id="selectAllTroops"> Tout sélectionner<br>
+    <div id="troopCheckboxes"></div>
+    <input type="number" id="campSize" placeholder="Taille des camps d'entrainement" min="1" />
+    <button id="validateTroopsButton">Valider les troupes</button>
+</div>
+
+<div id="compositionContainer" class="container" style="display: none;">
+    <h2>Générez votre armée aléatoire</h2>
+    <button id="generateButton"><img src="images/dice.png" alt="Dé" /> Générer la compo</button>
+</div>
+
+<div id="resultContainer" class="container" style="display: none;">
+    <h2>Alors tu as réussi ? Soit sincère !</h2>
+    <button id="successButton">Attaque réussie</button>
+    <button id="failButton">Attaque échouée</button>
+    <div id="resultMessage"></div>
+    <div id="armyComposition"></div>
+    <button id="retryButton" style="display: none;">Recommencer le défi</button>
+    <div id="leaderboard"></div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
